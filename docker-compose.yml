@@ -1,0 +1,12 @@
+postgres:
+  image: postgres:9.3
+  ports:
+    - "5432"
+
+bouncer:
+  build: .
+  links:
+    - postgres
+  ports:
+    - "5432"
+
