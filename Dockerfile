@@ -1,9 +1,9 @@
-# vim:set ft=dockerfile:
 FROM buildpack-deps:jessie-curl
 MAINTAINER Hans Kristian Flaatten <hans@starefossen.com>
 
 EXPOSE 5432
 
+# Make a dedicated user
 RUN groupadd -r pgbouncer && useradd -r -g pgbouncer pgbouncer
 
 ENV PGBOUNCER_VERSION 1.5.4
