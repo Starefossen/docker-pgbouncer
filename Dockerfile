@@ -6,7 +6,7 @@ EXPOSE 5432
 # Make a dedicated user
 RUN groupadd -r pgbouncer && useradd -r -g pgbouncer pgbouncer
 
-ENV PGBOUNCER_VERSION 1.5.4
+ENV PGBOUNCER_VERSION 1.5.5
 ENV PGBOUNCER_TAR_URL https://pgbouncer.github.io/downloads/files/${PGBOUNCER_VERSION}/pgbouncer-${PGBOUNCER_VERSION}.tar.gz
 ENV PGBOUNCER_SHA_URL ${PGBOUNCER_TAR_URL}.sha256
 
