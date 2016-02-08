@@ -11,7 +11,9 @@ ENV PGBOUNCER_SHA_URL ${PGBOUNCER_TAR_URL}.sha256
 
 # Install build dependencies
 RUN apt-get update -y \
-  && apt-get install -y --no-install-recommends build-essential libevent-dev ca-certificates curl \
+  && apt-get install -y --no-install-recommends \
+    build-essential \
+    libevent-dev \
   && rm -rf /var/lib/apt/lists/*
 
 # Get PgBouncer source code
