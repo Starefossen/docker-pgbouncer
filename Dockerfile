@@ -35,5 +35,5 @@ ADD pgbouncer.ini pgbouncer.ini
 RUN chown pgbouncer:pgbouncer pgbouncer.ini
 USER pgbouncer
 
-CMD pgbouncer pgbouncer.ini
-
+ENTRYPOINT ["pgbouncer"]
+CMD ["pgbouncer.ini"]
