@@ -1,5 +1,6 @@
 # vim:set ft=dockerfile:
 FROM buildpack-deps:jessie-curl
+MAINTAINER Hans Kristian Flaatten <hans@starefossen.com>
 
 EXPOSE 5432
 
