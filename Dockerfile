@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM debian:wheezy
+FROM buildpack-deps:jessie-curl
 
 EXPOSE 5432
 
